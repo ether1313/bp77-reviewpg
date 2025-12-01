@@ -10,7 +10,7 @@ const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
 )
 
-// ====== MultiSelectDropdown（透明 HUD 版本）======
+// ====== MultiSelectDropdown ======
 interface DropdownProps {
   label: string
   options: { label: string; isGroup?: boolean }[]
@@ -142,7 +142,7 @@ const MultiSelectDropdown = ({ label, options, selected, setSelected }: Dropdown
   )
 }
 
-// ====== 主表单（透明 HUD）======
+// ====== 主表单 ======
 const ReviewForm = () => {
   const [name, setName] = useState('')
   const [rating, setRating] = useState(0)
@@ -293,7 +293,7 @@ const ReviewForm = () => {
               </label>
               <input
                 type="text"
-                value="iPay9"
+                value="BigPay77"
                 readOnly
                 className="w-full px-4 py-3 rounded-xl 
                   bg-white/5 border border-white/20 text-white/60
