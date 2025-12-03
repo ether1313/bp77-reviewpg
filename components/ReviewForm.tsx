@@ -203,7 +203,7 @@ const ReviewForm = () => {
     setSubmitStatus('')
 
     try {
-      const { error } = await supabase.from('bigpay77_review').insert([
+      const { error } = await supabase.from('bp77_review').insert([
         {
           name,
           casino_wallet: 'BP77',

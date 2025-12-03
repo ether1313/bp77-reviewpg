@@ -101,7 +101,7 @@ export default function PastReviews() {
     const fetchReviews = async () => {
       try {
         const { data, error } = await supabase
-          .from('bigpay77_review')
+          .from('bp77_review')
           .select('*')
           .order('created_at', { ascending: false })
           .limit(10)
@@ -121,8 +121,8 @@ export default function PastReviews() {
 
     // ---- Supabase 实时监听新评论 ----
     const channel = supabase
-      .channel('realtime:bigpay77_review')
-      .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'bigpay77_review' }, (payload) => {
+      .channel('realtime:bp77_review')
+      .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'bp77_review' }, (payload) => {
         const newReview = formatReview(payload.new)
         setReviews((prev) => {
           const exists = prev.some((r) => r.name === newReview.name && r.comment === newReview.comment)
