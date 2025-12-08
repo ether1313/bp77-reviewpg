@@ -33,7 +33,7 @@ export default function FloatingIcon() {
           alt="Spin & Win"
           width={80}
           height={80}
-          className="rounded-full sm:w-[80px] sm:h-[80px] md:w-[90px] md:h-[90px]" 
+          className="sm:w-[80px] sm:h-[80px] md:w-[90px] md:h-[90px]" 
           priority
         />
       </a>
