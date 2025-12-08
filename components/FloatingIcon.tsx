@@ -31,8 +31,8 @@ export default function FloatingIcon() {
         <Image
           src="/playnow-floatingicon.gif"
           alt="Spin & Win"
-          width={70}
-          height={70}
+          width={80}
+          height={80}
           className="rounded-full sm:w-[80px] sm:h-[80px] md:w-[90px] md:h-[90px]" 
           priority
         />
